@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+p, aside {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 374px;
+    background: #965A1B;
+    z-index: 0;
+    position: relative;
+}
+
+header img {
+    margin-top: 5rem;
+    width: max-content;
+    height: max-content;
+}
+
+main {
+    background: #E5CF94;
+}
+
+.general-cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 1.56rem;
+    margin-top: -68px;
+    z-index: 0;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-radius: 5px;
+    width: 18.06vw;
+    background: white;
+}
+
+.general-cards-section .card:nth-child(3) {
+    background: #5F3305;
+}
+
+.general-cards-section .card {
+    padding: 1.25rem 1.56rem;
+    gap: 1.31rem;
+}
+
+.general-cards-section .card p {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.general-cards-section .card:nth-child(3) p {
+    color: white;
+}
+
+.title-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .title-icon p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.title-icon img {
+    width: 25px;
+    height: 22px;
+}
+
+.card:nth-child(3) img {
+    width: 12px;
+}
+
+@media (max-width: 933px) {
+    .general-cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .general-cards-section .card {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 425px) {
+    .general-cards-section .card {
+        width: 68.8vw;
+        padding: 1.125rem 1.31rem;
+    }
+}
+
+.orders-line-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.line-box {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.56rem;
+}
+
+#act-modal-btn {
+    cursor: pointer;
+    background: none;
+    font-size: 1rem;
+}
+
+.orders-line-section p, span, button {
+    color: #5F3305;
+    font-weight: 700;
+}
+
+.orders-line-section .card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.94rem;
+    margin-bottom: 1.56rem;
+    width: calc(62.72vw + 1.56rem);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.orders-line-section .card img {
+    width: 24px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.orders-line-section .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.31rem;
+}
+
+.orders-line-section .total-box {
+    display: flex;
+    gap: 0.94rem;
+}
+
+.orders-line-section .total-box p, span {
+    font-size: 0.75rem;
+}
+
+.orders-line-section .total-box p {
+    font-weight: 700;
+}
+
+.orders-line-section .total-box span {
+    font-weight: 400;
+}
+
+@media (max-width: 615px) {
+    .orders-line-section .card {
+        width: 80vw;
+    }
+    
+    .orders-line-section .line-box {
+        align-items: center;
+    }
+
+    .orders-line-section .total-box {
+        flex-direction: column;
+        gap: 0.31rem;
+    }
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(229, 207, 148, 0.5);
+    visibility: hidden;
+}
+
+#modal.active {
+    visibility: visible;
+}
+
+.modal h2, input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-box {
+    padding: 1.875rem;
+    /* width: 31.51vw; */
+    width: max-content;
+    background: white;
+}
+
+.modal-box h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #5F3305;
+}
+
+.modal .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.94rem;
+    padding-top: 1.56rem;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.94rem;
+}
+
+.modal form input {
+    height: 3.125rem;
+    border-radius: 5px;
+    background: #F5F5F5;
+    padding-left: 1.56rem;
+}
+
+.error-msg {
+    font-size: 0.7rem;
+    color: grey;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal form input::placeholder {
+    font-size: 0.75rem;
+    color: #7D7D7D;
+}
+
+.forms-btns {
+    display: flex;
+    gap: 1.56rem;
+}
+
+#send-btn {
+    padding: 1.125rem 6.5rem;
+    background-color: #5F3305;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+
+#cancel-btn {
+    padding: 1.125rem 5.82rem;
+    background-color: white;
+    font-weight: 600;
+    color: #DB1E1E;
+    border: 1px solid #DB1E1E;
+    border-radius: 5px;
+}
+
+@media (max-width: 645px) {
+    .modal-box {
+        align-items: center;
+    }
+
+    .forms-btns{
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0px;
+    background-color: #E5CF94;
+}
+
+footer aside {
+    font-size: 0.875rem;
+    color: #5F3305;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>La Padarie</title>
+</head>
+<body>
+    <header>
+        <img src="images/Logo (1).jpg" alt="Logo">
+    </header>
+    <main>
+        <section class="general-cards-section" id="general-cards-section">
+            <div class="card">
+                <div class="title-icon">
+                    <p>Pessoas na fila</p>
+                    <img src="images/person.svg" alt="ícone de pessoa">
+                </div>
+                <p id="total-people"><!-- valor no js --></p>
+            </div>
+            <div class="card">
+                <div class="title-icon">
+                    <p>Pães vendidos</p>
+                    <img src="images/cart.svg" alt="ícone de carrinho de supermercado">
+                </div>
+                <p id="total-breads"><!-- valor no js --></p>
+            </div>
+            <div class="card">
+                <div class="title-icon">
+                    <p>Entrada</p>
+                    <img src="images/dolar.svg" alt="Símbolo do dólar">
+                </div>
+                <p id="total-money"><!-- valor no js --></p>
+            </div>
+        </section>
+        <section class="orders-line-section" id="orders-line-section">
+            <div class="line-box">
+                <button id="act-modal-btn">+ Adicionar pessoa a fila</button>
+                <div id="cards">
+                    <!-- card no js -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="modal" id="modal">
+        <div class="modal-box">
+            <h2>Adicionar pessoa a fila</h2>
+            <div class="text-content" id="text-content">
+                <form action="" id="modal-form">
+                    <input id="user-name" type="text" name="user-name" placeholder="Nome completo do cliente" required>
+                    <input id="breads-number" type="number" name="breads-number" placeholder="Total de pães" required>
+                </form>
+                <div class="forms-btns">
+                    <button id="send-btn">Enviar</button>
+                    <button id="cancel-btn">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <aside>Com 💛 Info Jr UFBA 2021</aside>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
