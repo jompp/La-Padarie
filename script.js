@@ -1,20 +1,4 @@
-let line = [
-    {
-        name: 'seu zé',
-        breads: 10,
-        order: 0 
-    },
-    {
-        name: 'seu zé',
-        breads: 20,
-        order: 1 
-    },
-    {
-        name: 'seu zé',
-        breads: 17,
-        order: 2 
-    },
-]
+let line = []
 
 lineRender()
 
@@ -59,7 +43,7 @@ function lineRender() {
 document.getElementById('send-btn').addEventListener('click', () => {
     let sendName = document.getElementById('user-name')
     let sendBreads = document.getElementById('breads-number')
-    if (sendBreads.value != '' && sendName != '') {
+    if (sendBreads.value != '' && sendName != '' && /[^0-9]+/.test(sendName.value)) {
         line.push({
             name: sendName.value,
             breads: sendBreads.value,

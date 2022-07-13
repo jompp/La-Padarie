@@ -88,6 +88,14 @@ main {
     width: 12px;
 }
 
+.trash-btn {
+    background: none;
+}
+
+footer {
+    height: 100%;
+}
+
 @media (max-width: 933px) {
     .general-cards-section {
         flex-direction: column;
@@ -274,6 +282,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     border: 1px solid #DB1E1E;
     border-radius: 5px;
 }
+
 
 @media (max-width: 645px) {
     .modal-box {
