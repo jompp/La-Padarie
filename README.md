@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto
 
-Projeto desenvolvido durante o Núcleo de estudos Web da [InfoJr UFBA](https://br.linkedin.com/company/infojrufba). Consiste num site *single-page* que simula um sistema de venda de pães de uma padaria.
+Projeto desenvolvido durante o Núcleo de estudos Web da [InfoJr UFBA](https://br.linkedin.com/company/infojrufba) com o objetivo de introduzir à manipulação do DOM com o JavaScript e reforçar os conhecimentos em HTML e CSS. Consiste num site *single-page* que simula um sistema de venda de pães de uma padaria.
 
 ![Layout do site](./images/readme-preview.png)
 
